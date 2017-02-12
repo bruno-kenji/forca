@@ -4,10 +4,13 @@
 (defn perdeu [] (println "Voce perdeu"))
 (defn ganhou [] (println "Voce ganhou!"))
 
-(defn jogo [vidas]
+(defn acertou-a-palavra-toda? [palavra acertos] true)
+
+(defn jogo [vidas palavra acertos]
   (if (= vidas 0)
     (perdeu)
-    (ganhou)))
+    (if (acertou-a-palavra-toda? palavra acertos)
+      (ganhou))))
 
 (defn -main
   "I don't do a whole lot ... yet."
