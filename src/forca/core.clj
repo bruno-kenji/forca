@@ -17,7 +17,5 @@
     (if (acertou-a-palavra-toda? palavra acertos)
       (ganhou))))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn -main [& args]
+  (jogo 3 "PARALELEPIPEDO" (hash-set)))
