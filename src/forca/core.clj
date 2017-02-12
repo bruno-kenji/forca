@@ -1,14 +1,13 @@
 (ns forca.core
   (:gen-class))
 
-(def total-de-vidas 6)
-
-(defn perdeu []
-  (println "Voce perdeu"))
+(defn perdeu [] (println "Voce perdeu"))
+(defn ganhou [] (println "Voce ganhou!"))
 
 (defn jogo [vidas]
   (if (= vidas 0)
-    (perdeu)))
+    (perdeu)
+    (ganhou)))
 
 (defn -main
   "I don't do a whole lot ... yet."
